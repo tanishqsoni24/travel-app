@@ -20,6 +20,7 @@ const Datatable = ({ columns }) => {
 
   const { data } = useFetch(`${path}`);
 
+  
   const navigate = useNavigate();
 
   useEffect(() => {

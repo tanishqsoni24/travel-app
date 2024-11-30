@@ -33,7 +33,7 @@ function ReservationPage() {
   const [reservations, setReservations] = useState([]);
 
   useEffect(() => {
-    axios.get("reservations").then((response) => {
+    axios.get("http://localhost:5000/api/reservations").then((response) => {
       setReservations(response.data);
     });
   }, []);

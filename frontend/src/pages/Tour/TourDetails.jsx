@@ -92,7 +92,7 @@ const TourDetails = () => {
 
       if (result.isConfirmed) {
         const response = await axios.post(
-          "/tours/tourReservation",
+          "http://localhost:5000/api/tours/tourReservations",
           tourReservation
         );
         Swal.fire(response.data.message, "", "success");
